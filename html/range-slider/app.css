@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.video {
+    min-height: 30vh;
+    background-color: #eee;
+
+    user-select: none;
+}
+
+
+.slider {
+    appearance: none;
+    height: 20px;
+    width: 100%;
+    background-color: #777;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    color: red;
+    --track-color: green;
+}
+
+
+.slider::-webkit-slider-thumb {
+
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: blue;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid red;
+  }
+  
+
+.slider::-webkit-progress-value,  .slider::-moz-range-progress {
+    background-color: red;
+}
+
+::-webkit-progress-value {
+    background-color: red;
+}
+
+.bgyellow {
+    background-color: yellow;
+}

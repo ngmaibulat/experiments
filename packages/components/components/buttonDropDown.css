@@ -1,0 +1,100 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+:root {
+    --success-bg: #04AA6D;
+    --success-bg-hover: #46a049;
+
+    --info-bg: #2196F3;
+    --info-bg-hover: #0b7dda;
+    --info-border: #0d8bf2;
+
+    --warning-bg: #ff9800;
+    --warning-bg-hover: #e68a00;
+
+    --danger-bg: #f44336;
+    --danger-bg-hover: #da190b;
+
+    --default-bg: #e7e7e7;
+    --default-bg-hover: #ddd;
+}
+
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+    border-radius: 0;
+    user-select: none;
+  }
+  
+.success {background-color: var(--success-bg);} /* Green */
+.success:hover {background-color: var(--success-bg-hover);}
+
+.info { background-color: var(--info-bg); } /* Blue */
+.info:hover { background: var(--info-bg-hover); }
+
+.warning {background-color: var(--warning-bg);} /* Orange */
+.warning:hover {background: var(--warning-bg-hover);}
+
+.danger {background-color: var(--danger-bg);} /* Red */
+.danger:hover {background: var(--danger-bg-hover);}
+
+.default {background-color: var(--default-bg); color: black;} /* Gray */
+.default:hover {background: var(--default-bg-hover);}
+
+
+.borderleft {
+    border-left:1px solid var(--info-border);
+}
+
+
+.dropdown {
+    /* position: absolute; */
+    display: inline-block;
+    user-select: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--info-bg);
+    /* color: white; */
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    /* padding: 0.6rem 0.8rem; */
+    padding-left: 0;
+    padding-right: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    margin-left: 0;
+
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: white;
+    background-color: var(--info-bg-hover);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .btn:hover, .dropdown:hover .btn  {
+    background-color: var(--info-bg-hover);
+  }
